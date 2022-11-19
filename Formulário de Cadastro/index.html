@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Formulário de Cadastro/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+        <title>Cadastro Dev Cars</title>
+    </head>
+    <body>
+        <h1 id="h1">Cadastro Dev Cars</h1>
+        <form action="cad.php" method="get">
+            <fieldset class="cadastro">
+                <legend>Dados Pessoais</legend>
+                <div class="container">
+                    <label for="iNome">Nome</label>
+                    <input type="text" id="iNome" placeholder="Digite seu nome" maxlength="20" required >
+                    <label for="iSobrenome">Sobrenome</label>
+                    <input type="text" id="iSobrenome" placeholder="Digite seu sobrenome" size="20" maxlength="20" required>
+                </div>
+                <div class="container">
+                    <label for="iCelular">Celular</label>
+                    <input type="text" id="iCelular" placeholder="Digite seu numero com DD" required pattern="[0-9]{11}">
+                    <label for="iTelefone">Telefone</label>
+                    <input type="text" id="iTelefone" placeholder="Digite seu numero com DD" pattern="[0-9]{11}">
+                    <label for="iOpcional">Opcional</label>
+                </div>
+                <div class="container" id="UF">
+                    <label for="iEstado">UF</label>
+                    <select id="iEstado" name="estado" required>
+                        <option value="">Escolha um Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    <label for="iCity">Cidade</label>
+                    <input type="text" id="iCity" name="Cidade" required size="20" maxlength="20" placeholder="Digite o nome da Cidade">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Email e Senha</legend>
+                <div class="container">
+                    <label for="iEmail">Email</label>
+                    <input type="text" id="iEmail" placeholder="Digite seu email" required>
+                    <label for="iSenha">Senha</label>
+                    <input type="password" id="iSenha" placeholder="Digite uma senha" required>
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar" name="CadastroBotao" class="botaoCadastro">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
